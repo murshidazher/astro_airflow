@@ -26,3 +26,13 @@ astro dev start
 ```sh
 astro dev stop
 ```
+
+## Spark setup
+
+```sh
+cd spark/master
+docker build -t airflow/spark-master .
+
+cd spark/worker
+docker build -t airflow/spark-worker .
+```
