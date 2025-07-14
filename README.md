@@ -21,6 +21,9 @@ astro dev init
 
 ```sh
 astro dev start
+
+# to install requirements 
+astro dev restart
 ```
 
 ```sh
@@ -35,4 +38,7 @@ docker build -t airflow/spark-master .
 
 cd spark/worker
 docker build -t airflow/spark-worker .
+
+cd spark/notebooks/stock_transform
+docker build -t airflow/stock-app .
 ```
